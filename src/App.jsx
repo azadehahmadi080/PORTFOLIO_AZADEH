@@ -1,14 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowDown, ArrowDownToLine, ArrowUpRight, Github, Linkedin, Menu, X, Globe2, ChevronDown, Sun, Brush, Code2, Server, Clapperboard, Presentation, GraduationCap, BriefcaseBusiness, Target } from 'lucide-react'
-
-const initialProjects = [
-  { id: 1, title: 'Online Shop Platform', category: 'E-Commerce Website', type: 'Website Design', year: '2025', image: 'https://azadehahmadi080.github.io/azadehportfolio/onlineshop.png', liveUrl: 'https://onlinestore-pi-puce.vercel.app/', description: 'An online store with product listings, a shopping cart, and secure checkout.', techStack: ['HTML', 'CSS', 'JavaScript', 'React'] },
-  { id: 2, title: "Foodie’s Restaurant", category: 'Restaurant Website', type: 'Website Design', year: '2025', image: 'https://azadehahmadi080.github.io/azadehportfolio/foodwebsite.png', liveUrl: 'https://azadehahmadi080.github.io/foodwebsit/', description: 'A restaurant site featuring menus, chef specials, reservations, and a food gallery.', techStack: ['HTML', 'CSS', 'JavaScript'] },
-  { id: 3, title: 'Todo Task Manager', category: 'Productivity App', type: 'App Desktop', year: '2025', image: 'https://azadehahmadi080.github.io/azadehportfolio/todotask.png', liveUrl: 'https://azadehahmadi080.github.io/todoapp/', description: 'A simple task manager for organizing daily activities and boosting productivity.', techStack: ['HTML', 'CSS', 'JavaScript'] },
-  { id: 4, title: 'Recipe Finder App', category: 'Recipe Finder App', type: 'App Mobile Design', year: '2025', image: 'https://azadehahmadi080.github.io/azadehportfolio/recepifinder.png', liveUrl: 'https://azadehahmadi080.github.io/recepifinder/', description: 'Browse, share, and discover recipes through a modern, user-friendly interface.', techStack: ['HTML', 'CSS', 'JavaScript'] },
-  { id: 5, title: 'GitHub User Finder', category: 'GitHub Tool', type: 'App Desktop', year: '2025', image: 'https://azadehahmadi080.github.io/azadehportfolio/githubuserfinder.png', liveUrl: 'https://azadehahmadi080.github.io/githubfinder/', description: 'Search GitHub users and explore their profiles, repositories, and activity in a clean dashboard.', techStack: ['HTML', 'CSS', 'JavaScript', 'GitHub API'] },
-  { id: 6, title: 'QuiezApp', category: 'Quiz App', type: 'App Mobile Design', year: '2025', image: 'https://azadehahmadi080.github.io/azadehportfolio/quiezapp.png', liveUrl: 'https://azadehahmadi080.github.io/Quiezapp/', description: 'An interactive quiz with multiple question types and instant feedback.', techStack: ['HTML', 'CSS', 'JavaScript'] },
-]
+import { initialProjects } from './projects.js'
 
 const filters = ['All', 'Website Design', 'App Mobile Design', 'App Desktop']
 const roleTitles = ['Full Stack Web Developer', 'UI/UX Designer']
